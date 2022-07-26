@@ -1,7 +1,7 @@
-CREATE TABLE `sap_competitor_collection_data`
-(		
+CREATE TABLE `sap_competitor_competitor_collection_data`
+(
+			`ObjectID`                            varchar(70) NOT NULL,
 			`CompetitorID`                        varchar(10) NOT NULL,	
-			`ObjectID`                            varchar(70) DEFAULT NULL,
 			`CompetitorUUID`                      tinyint(1) DEFAULT NULL,
 			`StatusCode`                          varchar(2) DEFAULT NULL,
 			`StatusCodeText`                      tinyint(1) DEFAULT NULL,
@@ -56,6 +56,6 @@ CREATE TABLE `sap_competitor_collection_data`
 			`ChangedByIdentityUUID`               tinyint(1) DEFAULT NULL,
 			`EntityLastChangedOn`                 tinyint(1) DEFAULT NULL,
 			`ETag`                                tinyint(1) DEFAULT NULL,
-	PRIMARY KEY(`CompetitorID`)
+	PRIMARY KEY(`ObjectID`, `CompetitorID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4

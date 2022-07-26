@@ -11,8 +11,8 @@ https://api.sap.com/api/competitor/overview
 ## sqlの設定ファイル
 sap-competitor-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
 
-* sap-competitor-collection-data.sql（SAP コンペティター - コンペティターデータ）  
-* sap-competitor-sales-organization-collection-data.sql（SAP コンペティター - 販売組織データ）   
+* sap-competitor-sql-competitor-collection-data.sql（SAP コンペティター - コンペティターデータ）  
+* sap-competitor-sql-competitor-sales-organization-collection-data.sql（SAP コンペティター - コンペティター販売組織データ）   
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
